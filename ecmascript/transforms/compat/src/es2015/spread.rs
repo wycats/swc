@@ -146,6 +146,8 @@ impl Fold for ActualFolder {
                             definite: false,
                             name: Pat::Ident(ident.clone().into()),
                             // Initialized by paren exprssion.
+                            name: Pat::Ident(ident.clone()),
+                            // Initialized by paren expression.
                             init: None,
                         });
 
